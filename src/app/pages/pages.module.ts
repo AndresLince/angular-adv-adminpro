@@ -1,3 +1,5 @@
+import { ComponentsModule } from './../components/components.module';
+import {FormsModule} from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { SharedModule } from './../shared/shared.module';
 import { PagesComponent } from './pages.component';
@@ -16,8 +18,11 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [   
     CommonModule,
+    FormsModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    ComponentsModule,
+    
   ],
   exports: [    
     ProgressComponent,
