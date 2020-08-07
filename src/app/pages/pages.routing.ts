@@ -1,3 +1,4 @@
+import { PerfilComponent } from './perfil/perfil.component';
 import { AuthGuard } from './../guards/auth.guard';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { PromesasComponent } from './promesas/promesas.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
           {path:'grafica1',component:Grafica1Component,data:{title:'Graficas'}},  
           {path:'account-settings',component:AccountSettingsComponent,data:{title:'Account Settings'}},   
           {path:'promesas',component:PromesasComponent,data:{title:'Promesas'}},   
-          {path:'rxjs',component:RxjsComponent,data:{title:'RXJS'}},             
+          {path:'rxjs',component:RxjsComponent,data:{title:'RXJS'}},    
+          {path:'perfil',component:PerfilComponent,data:{title:'Perfil de usuario'}},             
         ]
     },    
 ];
